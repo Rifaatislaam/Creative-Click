@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Click</title>
+
+<!-- CUSTOM FAVICON LINK IS HERE -->
+    <link rel="shortcut icon" href="./IMAGES/logo (1).jpg" type="image/x-icon">
+
+<!-- CUSTOM INDEX CSS LINK IS HERE -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+<!-- CUSTOM FONT-AWESOME CDN LINK IS HERE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- CUSTOM SWIPER CDN LINK IS HERE -->
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+<!-- CUSTOM AOS CSS CDN LINK IS HERE  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+</head>
+<body>
+    
+
+
+<!-- === -- HERE NAVIGATION SECTION -- ===  -->
+    <nav>
+        <div class="nav-container container">
+            <a href="./index.html"><h2 class="logo">Creative Click</h2></a>
+            <ul class="nav-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./album.html">Album</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+
+
+<!-- === -- HERE HEADER SECTION -- ===  -->
+    <header>
+        <div class="container header-container">
+            <div class="header-left">
+                <h1>Creative Click</h1>
+                <h3>Photography and Cinematography</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum recusandae voluptas sint est. Libero earum, quia, eaque saepe exercitationem iste dolores quibusdam reiciendis odit iure tenetur quis, dolore voluptate maxime?</p>
+                <a href="./contact.html" class="btn">Contact us</a>
+            </div>
+            <div class="header-right">
+                <div class="header-right-img">
+                    <img src="./IMAGES/logo (1).jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+<!-- === -- HERE CATEGORY SECTION -- ===  -->
+    <section class="categories">
+        <div class="container categories-container">
+            <div class="categories-left">
+                <h1>Categories</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique dolorum omnis repudiandae porro reprehenderit quasi ad voluptas a sunt enim?</p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+            <div class="catagories-right">
+                <article class="category" >
+                    <span class="category-icon"><i class="fa-solid fa-camera-retro"></i></span>
+                    <h5>Photography</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="category">
+                    <span class="category-icon"><i class="fa-sharp fa-solid fa-icons"></i></span>
+                    <h5>Event-Managment</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="category">
+                    <span class="category-icon"><i class="fa-sharp fa-solid fa-video"></i></span>
+                    <h5>Videography</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="category">
+                    <span class="category-icon"><i class="fa-solid fa-shield-heart"></i></span>
+                    <h5>Wedding</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="category">
+                    <span class="category-icon"><i class="fa-sharp fa-solid fa-cake-candles"></i></span>
+                    <h5>Birthday</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="category">
+                    <span class="category-icon"><i class="fa-brands fa-shopify"></i></span>
+                    <h5>Product Marketing</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- HERE GALLERY SECTION IS HERE -->
+<section class="container section gallery-containers gallery" id="gallery">
+  <div class="title-section">
+    <h1 class="headline">Our Gallery</h1>
+  </div>
+    <div class="container">
+
+      <ul class="gallery-list">
+
+        <li class="gallery-item" data-reveal>
+
+          <div class="gallery-card">
+
+            <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+              <img src="./IMAGES/GELLERY/gallery-1.jpg" width="450" height="625" loading="lazy" alt="The Drunken"
+                class="img-cover">
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h6">
+                <a href="#" class="card-title">Roni and Vabi</a>
+              </h3>
+
+              <span class="card-tag">Outdoor, Weeding</span>
+            </div>
+
+            <a href="#" class="btn-icon">
+              <img src="./IMAGES/GELLERY/arrow-forward.svg" width="43" height="20" loading="lazy"
+                alt="arrow-forward icon">
+            </a>
+
+          </div>
+
+          <div class="gallery-card">
+
+            <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+              <img src="./IMAGES/GELLERY/gallery-2.jpg" width="450" height="625" loading="lazy"
+                alt="Lettuce Entertain" class="img-cover">
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h6">
+                <a href="#" class="card-title">Shohan and Rakha</a>
+              </h3>
+
+              <span class="card-tag">Night Shut, Wedding</span>
+            </div>
+
+            <a href="#" class="btn-icon">
+              <img src="./IMAGES/GELLERY/arrow-forward.svg" width="43" height="20" loading="lazy"
+                alt="arrow-forward icon">
+            </a>
+
+          </div>
+
+        </li>
+
+        <li class="gallery-item" data-reveal>
+
+          <div class="gallery-card">
+
+            <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+              <img src="./IMAGES/GELLERY/gallery-3.jpg" width="450" height="625" loading="lazy" alt="Leaping Lizard"
+                class="img-cover">
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h6">
+                <a href="#" class="card-title">Zoha</a>
+              </h3>
+
+              <span class="card-tag">Indoor, Birthday</span>
+            </div>
+
+            <a href="#" class="btn-icon">
+              <img src="./IMAGES/GELLERY/arrow-forward.svg" width="43" height="20" loading="lazy"
+                alt="arrow-forward icon">
+            </a>
+
+          </div>
+
+          <div class="gallery-card">
+
+            <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+              <img src="./IMAGES/GELLERY/gallery-4.jpg" width="450" height="625" loading="lazy" alt="Juan More Taco"
+                class="img-cover">
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h6">
+                <a href="#" class="card-title">Fairooz Aniqa and Hossain Moonem</a>
+              </h3>
+
+              <span class="card-tag">Outdoor, Wedding</span>
+            </div>
+
+            <a href="#" class="btn-icon">
+              <img src="./IMAGES/GELLERY/arrow-forward.svg" width="43" height="20" loading="lazy"
+                alt="arrow-forward icon">
+            </a>
+
+          </div>
+
+        </li>
+
+        <li class="gallery-item" data-reveal>
+
+          <div class="gallery-card">
+
+            <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+              <img src="./IMAGES/GELLERY/gallery-5.jpg" width="450" height="625" loading="lazy" alt="Goldilox Bagels"
+                class="img-cover">
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h6">
+                <a href="#" class="card-title">Hindu Weeding</a>
+              </h3>
+
+              <span class="card-tag">Outdoor, Wedding</span>
+            </div>
+
+            <a href="#" class="btn-icon">
+              <img src="./IMAGES/GELLERY/arrow-forward.svg" width="43" height="20" loading="lazy"
+                alt="arrow-forward icon">
+            </a>
+
+          </div>
+
+          <div class="gallery-card">
+
+            <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+              <img src="./IMAGES/GELLERY/gallery-6.jpg" width="450" height="625" loading="lazy" alt="Cookie Monstah"
+                class="img-cover">
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h6">
+                <a href="#" class="card-title">Faruk and Vabi</a>
+              </h3>
+
+              <span class="card-tag">Indoor, Wedding</span>
+            </div>
+
+            <a href="#" class="btn-icon">
+              <img src="./IMAGES/GELLERY/arrow-forward.svg" width="43" height="20" loading="lazy"
+                alt="arrow-forward icon">
+            </a>
+
+          </div>
+
+        </li>
+
+        <li class="gallery-item" data-reveal>
+
+          <div class="gallery-card">
+
+            <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+              <img src="./IMAGES/GELLERY/gallery-7.jpg" width="450" height="625" loading="lazy"
+                alt="Divine Pastabilities" class="img-cover">
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h6">
+                <a href="#" class="card-title">Mahadi and Vabi</a>
+              </h3>
+
+              <span class="card-tag">Outdoor, Wedding</span>
+            </div>
+
+            <a href="#" class="btn-icon">
+              <img src="./IMAGES/GELLERY/arrow-forward.svg" width="43" height="20" loading="lazy"
+                alt="arrow-forward icon">
+            </a>
+
+          </div>
+
+          <div class="gallery-card">
+
+            <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+              <img src="./IMAGES/GELLERY/gallery-10.jpg" width="450" height="625" loading="lazy"
+                alt="The Lockhart Bar" class="img-cover">
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h6">
+                <a href="#" class="card-title">Apu</a>
+              </h3>
+
+              <span class="card-tag">Event, Rangpur</span>
+            </div>
+
+            <a href="#" class="btn-icon">
+              <img src="./IMAGES/GELLERY/arrow-forward.svg" width="43" height="20" loading="lazy"
+                alt="arrow-forward icon">
+            </a>
+
+          </div>
+
+
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+
+
+    
+<!-- === -- HERE FOOTER US SECTION -- ===  -->
+<footer>
+    <div class="container footer-container">
+        <div class="footer-1">
+            <a href="./index.html"><h4 class="logo">Creative Click</h4></a>
+            <p>Lorem ipsum dolor sit amet conse. Consequatur, sequi!</p>
+        </div>
+        <div class="footer-2">
+            <h4>Permalinks</h4>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Album</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms & conditions</a></li>                <li><a href="">Refund Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-4">
+            <h4>Contact Us</h4>
+            <div>
+                <p>+8801641-939998</p>
+                <p>apon.aslam.421@gmail.com</p>
+            </div>
+            <ul class="footer-socials">
+                <li><a href="https://www.facebook.com/creativeclick.rng"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <small>Copyright &copy; 2022 | Design by <a href="https://www.facebook.com/profile.php?id=100036396420748">Rifat Islam</a>  </small>
+    </div>
+</footer>
+
+
+
+<!-- CUSTOM SWIPE JAVASCRIPT LINK IS HERE -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- CUSTOM JAVASCRIPT LINK IS HERE -->
+<script src="./JAVASCRIPT/script.js"></script>
+
+<!-- CUSTOM AOS JAVASCRIPT CDN LINK IS HERE  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+
+</body>
+</html>

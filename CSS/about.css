@@ -1,0 +1,213 @@
+:root {
+    --primary-color:#6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.7);
+    --color-white: #fff;
+    --color-light: rgba(255,255,255,0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+
+    --container-weight-lg: 76%;
+    --container-weight-md: 90%;
+    --container-weight-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+
+
+
+
+
+/* <=== ABOUT ACHIEVEMENT DESIGN IS HERE ===> */
+
+.about-achievement-right h1 {
+    color: goldenrod;
+}
+.about-achievement {
+    margin-top: 3rem;
+}
+.about-achievement-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+}
+.about-achievement-right>p {
+    margin: 1.6rem 0 2.5rem;
+}
+.achievement-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.achievement-card {
+    background-color: var(--color-bg1);
+    padding: 1.6rem;
+    text-align: center;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+.achievement-card:hover {
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+.achievement-icon {
+    font-size: 20px;
+    background-color: var(--color-danger);
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+.achievement-card h3 {
+    margin-top: 15px;
+    color: var(--color-success);
+}
+.achievement-card p {
+    color: gold;
+    margin-top: 7px;
+}
+
+
+
+
+
+
+/* <=== TEEM MEMBER DESIGN IS HERE ===> */
+
+.teem {
+    background-color: var(--color-bg1);
+    box-shadow: inset 1 0 3rem rgba(0, 0, 0, 0.5);
+}
+.teem h2 {
+    font-family: 'Advent Pro', sans-serif;
+    letter-spacing: 1.5px;
+}
+.teem-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.teem-member {
+    background-color: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+.teem-member:hover {
+    background: transparent;
+    border-color: 1px solid var(--primary-color) ;
+    color: goldenrod;
+}
+.teem-member-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    margin-left: 10px;
+
+}
+.teem-member-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+.teem-member-info h4 {
+    color: gold;
+}
+.teem-member-info p {
+    margin-top: 5px;
+}
+.social{
+    position: absolute;
+    top: 22%;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: deeppink;
+    border-radius: 0 1rem 1rem 0;
+    transform: translateY(-10%);
+    box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+
+}
+.social a {
+    padding: 1rem;
+}
+
+.teem-member:hover .social {
+    left: 0%;
+}
+
+
+
+
+
+
+/* DESIGN FOR TABLET SCREEN MOOD */
+@media screen and (max-width:1024px) {
+    .about-achievement-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .about-achievement-left {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .teem-container {
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .teem-member img {
+        margin-left: 18px;
+    }
+
+}
+
+
+
+
+
+
+/* (: ====> DESIGN FOR MOBILE SCREEN MOOD <==== :) */
+
+@media screen and (max-width: 844px) {
+    .achievement-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .teem {
+        margin-top: -5rem;
+        border-radius: 20px 20px 0  0;
+    }
+    .teem h2 {
+        margin-top: -3rem;
+        font-family: 'Advent Pro', sans-serif;
+        letter-spacing: 1.5px;
+        color: gold;
+    }
+    .teem-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
+    .teem-member {
+        padding: 20px;
+        gap: 2rem;
+    }
+    .teem-member img {
+        margin-right: 50px;
+        width: 300px;
+        height: 300px;
+    }
+
+
+
+
+    /* FOOTER-SECTION DESIGN */
+    .footer-container {
+        margin-top: -3rem;
+    }
+}
